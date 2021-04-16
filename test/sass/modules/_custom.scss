@@ -1,0 +1,43 @@
+body {
+  font-family: $base-font !important;
+  font-size: $base-font-size !important;
+  font-weight: $base-font-weight !important;
+  color: $base-color;
+  margin: 0;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $theme-color;
+    border-radius: 15px;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.ti {
+  font-size: 24px;
+  font-weight: 500;
+}
+button {
+  &:hover,&:focus,&:active {
+    outline: none;
+    border: none;
+  }
+}
