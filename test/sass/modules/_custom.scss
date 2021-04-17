@@ -35,9 +35,33 @@ p {
   font-size: 24px;
   font-weight: 500;
 }
-button {
-  &:hover,&:focus,&:active {
+button,
+input {
+  &:hover,
+  &:focus,
+  &:active {
     outline: none;
     border: none;
+  }
+}
+.fontli {
+  display: flex;
+  align-items: center;
+  .font-btn {
+    background: #fff;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    cursor: pointer;
+    border-right: 1px sold #dbdbdb !important;
+    &:last-of-type {
+      border-right: 0;
+    }
   }
 }
